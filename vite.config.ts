@@ -209,7 +209,6 @@ export default defineConfig({
   
   base: '/KNOOZ-AIR/', // استبدل هذا باسم المستودع الخاص بك بدقة
   plugins: [react()],
-  plugins,
   resolve: {
     alias: {
       "@": path.resolve(import.meta.dirname, "client", "src"),

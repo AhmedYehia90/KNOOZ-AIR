@@ -16,7 +16,8 @@
   "routes": [
     {
       "src": "/assets/(.*)",
-      "dest": "/dist/public/assets/$1"
+      "dest": "/client/dist/public/assets/$1",
+      "continue": true
     },
     {
       "src": "/api/(.*)",

@@ -2,7 +2,7 @@ name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: "main" # أو master حسب اسم الفرع الرئيسي لديك
+    branches: "main" # تأكد أن هذا هو اسم فرعك الرئيسي (main أو master)
 
 permissions:
   contents: read
@@ -33,7 +33,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./dist # تأكد أن هذا هو مجلد المخرجات (في Vite يكون dist)
+          path: ./dist/public # تم التعديل هنا ليتوافق مع مخرجات Vite الخاصة بك
 
       - name: Deploy to GitHub Pages
         id: deployment

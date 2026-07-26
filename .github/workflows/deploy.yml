@@ -33,7 +33,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./dist # تم التعديل هنا ليتوافق مع مخرجات Vite الخاصة بك
+         path: ./client/dist/public # هذا هو المسار الفعلي والمضبوط داخل ملف التكوين الخاص بك
 
       - name: Deploy to GitHub Pages
         id: deployment

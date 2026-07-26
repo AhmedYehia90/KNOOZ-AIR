@@ -33,7 +33,8 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-         path: ./client/dist/public # هذا هو المسار الفعلي والمضبوط داخل ملف التكوين الخاص بك
+          path: |
+            **/dist
 
       - name: Deploy to GitHub Pages
         id: deployment

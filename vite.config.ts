@@ -6,7 +6,7 @@ import path from "node:path";
 import { defineConfig, type Plugin, type ViteDevServer } from "vite";
 import { vitePluginManusRuntime } from "vite-plugin-manus-runtime";
 export default defineConfig({
-  base: '/KNOOZ-AIR-GitHub/', // استبدل هذا باسم المستودع الخاص بك بدقة
+  base: '/KNOOZ-AIR/', // استبدل هذا باسم المستودع الخاص بك بدقة
   plugins: [react()],
 })
 // =============================================================================
